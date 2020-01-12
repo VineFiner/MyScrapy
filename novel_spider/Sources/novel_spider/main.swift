@@ -1,7 +1,9 @@
 import Foundation
 
 print("Hello, world!")
-
+var app = MyApp()
+app.run(bookId: "1703")
+/*
 class SpiderMain: NSObject {
     // URL 管理器
     let urlManager = UrlManager()
@@ -10,7 +12,7 @@ class SpiderMain: NSObject {
     // URL 解析器
     let parser = HtmlParser()
     // HTML 输出器
-    let outputer = HtmlOutputer()
+    var outputer = HtmlOutputer()
     
     // 爬虫调度程序
     func craw(rootUrl: String) {
@@ -32,7 +34,7 @@ class SpiderMain: NSObject {
             }
 
             //
-            if count > 3 {
+            if count > 50 {
                 break
             }
             count = count + 1
@@ -43,7 +45,7 @@ class SpiderMain: NSObject {
     
 }
 // 第一章信息
-let rootUrl = "https://www.52bqg.com/book_111399/36221942.html"
+let rootUrl = "https://www.52bqg.com/book_1703/1113845.html"
 let spider = SpiderMain()
 spider.craw(rootUrl: rootUrl)
 
@@ -59,3 +61,4 @@ extension SpiderMain {
         }
     }
 }
+*/
